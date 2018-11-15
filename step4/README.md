@@ -1,7 +1,8 @@
-# step 3 - Variables
+# step 4 - PHP and HTML
 this folder is containing about variable lesson from PHP Practitioner :
 
-1. hello world
-2. greeting
-3. name
-4. greeting name
+1. html
+2. html2
+3. get
+4. get2
+5. get3
