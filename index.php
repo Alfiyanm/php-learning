@@ -1,3 +1,3 @@
 <?php
 
-require 'step3/name.php';
+require 'step3/greeting-name.php';
