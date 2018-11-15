@@ -11,8 +11,12 @@ echo $greeting . $name;
 
 // 2. 
 
-//$greeting = "Hello";
+// $greeting = "Hello";
 
-//$name = "alfiyan";
+// $name = "alfiyan";
 
-//echo $greeting . ', ' . $name;
+// echo $greeting . ', ' . $name;
+
+// 3. 
+
+// echo "{$greeting}, {$name}";
