@@ -4,3 +4,4 @@ this folder is containing about variable lesson from PHP Practitioner :
 1. array.php
 2. index.php
 3. index.view.php
+4. index.view2.php
