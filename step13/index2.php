@@ -6,4 +6,8 @@ try {
     die ('Could not connect.');
 }
 
+$pdo->prepare('select * from php-learning');
+
+// this code when execute is not showing any thing
+
 require 'index.view.php';
