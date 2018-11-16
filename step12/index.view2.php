@@ -10,7 +10,7 @@
 
     <ul>
         <?php foreach ($tasks as $task) : ?>
-            <li><?= $task->description; ?></li>
+            <li><?= $task->description(); ?></li>
         <?php endforeach; ?>
     </ul>
 </body>
