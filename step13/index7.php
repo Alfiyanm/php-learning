@@ -16,6 +16,8 @@ $statement = $pdo->prepare('select * from todos');
 
 $statement->execute();
 
-$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
+$result = $statement->fetchAll(PDO::FETCH_OBJ);
+
+var_dump($result[0]->description);
 
 require 'index.view.php';

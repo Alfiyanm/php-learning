@@ -6,7 +6,7 @@ class Task {
 
     protected $description;
 
-    protected $completed = true;
+    protected $completed = false;
 
     public function __construct($description)
     {
@@ -31,4 +31,4 @@ $task->complete();
 
 var_dump($task->isComplete());
 
-require 'view.index.php';
+// require 'view.index.php';

@@ -1,7 +1,5 @@
 <?php
 
-// require 'functions.php';
-
 class Task {
 
     protected $description;
@@ -20,4 +18,4 @@ $task = new Task('Go to the store');
 var_dump($task);
 
 
-//require 'view.index.php';
+// require 'view.index.php';

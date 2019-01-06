@@ -1,6 +1,6 @@
 <?php
 
-require 'Task2.php';
+require 'Task.php';
 
 try { // the best practice is allways use pdo to connect to the database
     $pdo = new PDO('mysql:host=127.0.0.1;dbname=php-learning', '(username)', '(password)');
@@ -19,7 +19,5 @@ $statement = $pdo->prepare('select * from todos');
 $statement->execute();
 
 $tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
-
-var_dump($tasks[0]->foobar());
 
 require 'index.view.php';

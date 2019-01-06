@@ -6,10 +6,8 @@ try {
     die ('Could not connect.');
 }
 
-$statement = $pdo->prepare('select * from todos');
+$pdo->prepare('select * from php-learning');
 
-$statement->execute();
-
-var_dump($statement->fetchAll());
+// this code when execute is not showing any thing
 
 require 'index.view.php';

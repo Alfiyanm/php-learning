@@ -1,6 +1,5 @@
 <?php
 
-
 try { // the best practice is allways use pdo to connect to the database
     $pdo = new PDO('mysql:host=127.0.0.1;dbname=php-learning', '(username)', '(password)');
 } catch (PDOException $e) {
@@ -17,6 +16,6 @@ $statement = $pdo->prepare('select * from todos');
 
 $statement->execute();
 
-$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
 
 require 'index.view.php';
