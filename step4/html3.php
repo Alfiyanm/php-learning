@@ -15,7 +15,14 @@
 </head>
 <body>
     <header>
-        <h1><?php echo 'Hello world';?></h1>
+        <h1>
+            <?php
+                $greeting = "Hello, World";
+
+                echo $greeting;
+            ?>
+        </h1>
     </header>
+    
 </body>
 </html>
