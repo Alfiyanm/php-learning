@@ -4,7 +4,8 @@
 
 class Task {
 
-    public $description;
+    protected $description; // if it's execute, the result is error or not shown
+    // because $description is protected
 
     protected $completed = false;
 
@@ -33,3 +34,4 @@ $tasks = [
 
 
 require './index.view.php';
+

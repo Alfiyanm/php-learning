@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        header {
-            background: #e3e3e3;
-            padding: 2em;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -28,7 +21,13 @@
             </li>
             <li>
                 <strong>Status : </strong>
-                <?= $task['completed'] ? 'complete': 'incomplete'; ?>
+                <?php 
+                if ($task['completed']) {
+                    echo '<span class="icon">&#9989;</span>';
+                } else {
+                    echo 'incomplete';
+                }
+                ?>
             </li>
         </ul>
     </header>

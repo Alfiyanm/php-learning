@@ -1,11 +1,10 @@
 <?php
 
-// require 'functions.php';
+require 'functions.php';
 
 class Task {
 
-    protected $description; // if it's execute, the result is error or not shown
-    // because $description is protected
+    protected $description;
 
     protected $completed = false;
 
@@ -32,6 +31,6 @@ $tasks = [
     new Task('Clean my room')
 ];
 
+dd($tasks);
 
-require './index.view.php';
-
+//require 'view.index.php';

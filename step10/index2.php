@@ -1,11 +1,7 @@
 <?php
 
-$animals = ['dog', 'cat'];
-
-function dd($animals) {
-    echo '<pre>';
-    die(var_dump($animals));
-    echo '</pre>';
+function dumper($one, $two, $three) {
+    var_dump($one, $two, $three);
 }
 
-dd($animals);
+dumper('Hello', 'big', 'world');

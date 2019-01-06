@@ -4,9 +4,9 @@
 
 class Task {
 
-    public $description;
+    protected $description;
 
-    public $completed = false;
+    protected $completed = false;
 
     public function __construct($description)
     {
@@ -23,14 +23,18 @@ class Task {
     {
         return $this->completed;
     }
+
+    public function description()
+    {
+        return $this->description; // return value to protected property
+    }
 }
 
 $tasks = [
-    new Task('Go to the store'), // 0
-    new Task('Finish my screencast'), // 1
-    new Task('Clean my room') // 2
+    new Task('Go to the store'),
+    new Task('Finish my screencast'),
+    new Task('Clean my room')
 ];
 
-$tasks[0]->complete(); // array number 0 is correct
 
-require './index.view3.php';
+require './index.view2.php'; // part of index.view2.php

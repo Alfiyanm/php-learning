@@ -13,16 +13,11 @@ class Task {
         // Automaticaly triggered on instantiation
         $this->description = $description;
     }
-
-    public function isComplete()
-    {
-        return $this->completed;
-    }
 }
 
 $task = new Task('Go to the store');
 
-var_dump($task->isComplete());
+dd($task);
 
 
 //require 'view.index.php';

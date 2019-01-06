@@ -1,12 +1,12 @@
 <?php
 
-require 'functions.php';
+// require 'functions.php';
 
 class Task {
 
-    protected $description;
+    public $description;
 
-    protected $completed = true;
+    public $completed = false;
 
     public function __construct($description)
     {
@@ -25,10 +25,12 @@ class Task {
     }
 }
 
-$task = new Task('Go to the store');
+$tasks = [
+    new Task('Go to the store'), // 0
+    new Task('Finish my screencast'), // 1
+    new Task('Clean my room') // 2
+];
 
-$task->complete();
+$tasks[0]->complete(); // array number 0 is correct
 
-var_dump($task->isComplete());
-
-require 'view.index.php';
+require './index.view4.php';

@@ -4,7 +4,7 @@
 
 class Task {
 
-    protected $description;
+    public $description;
 
     protected $completed = false;
 
@@ -23,11 +23,6 @@ class Task {
     {
         return $this->completed;
     }
-
-    public function description()
-    {
-        return $this->description; // return value to protected property
-    }
 }
 
 $tasks = [
@@ -37,4 +32,4 @@ $tasks = [
 ];
 
 
-require './index.view2.php'; // part of index.view2.php
+require './index.view.php';

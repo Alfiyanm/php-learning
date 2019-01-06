@@ -20,12 +20,7 @@
                 <strong>Person Responsible : </strong><?= $task['assigned_to']; ?>
             </li>
             <li>
-                <strong>Status : </strong>
-                <?php if ($task['completed']) : ?>
-                    <span class="icon">&#9989;</span>
-                <?php else : ?>
-                    <span class="icon">Incomplete</span>
-                <?php endif ; ?>
+                <strong>Status : </strong><?= $task['completed'] ? 'complete': 'incomplete'; // this use ternary operator?>
             </li>
         </ul>
     </header>

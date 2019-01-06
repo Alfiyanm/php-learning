@@ -1,6 +1,6 @@
 <?php
 
-require 'functions.php';
+// require 'functions.php';
 
 class Task {
 
@@ -17,7 +17,7 @@ class Task {
 
 $task = new Task('Go to the store');
 
-dd($task);
+var_dump($task);
 
 
 //require 'view.index.php';

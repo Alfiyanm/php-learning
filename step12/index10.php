@@ -33,4 +33,4 @@ $tasks = [
 
 $tasks[0]->complete(); // array number 0 is correct
 
-require './index.view4.php';
+require './index.view3.php';

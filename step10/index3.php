@@ -1,9 +1,11 @@
 <?php
 
-require 'functions.php';
-
 $animals = ['dog', 'cat'];
 
-dd(['dog', 'cat']);
+function dd($animals) {
+    echo '<pre>';
+    die(var_dump($animals));
+    echo '</pre>';
+}
 
-require 'index.view.php';
+dd($animals);

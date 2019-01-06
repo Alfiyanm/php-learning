@@ -12,7 +12,7 @@
         <ul>
             <?php foreach ($task as $heading => $value) : ?>
             <li>
-                <strong><?= $heading; ?></strong>
+                <strong><?= ucwords($heading); ?>: </strong> <?= $value; ?> 
             </li>
             <?php endforeach; ?>
         </ul>

@@ -6,17 +6,12 @@ class Task {
 
     protected $description;
 
-    protected $completed = true;
+    protected $completed = false;
 
     public function __construct($description)
     {
         // Automaticaly triggered on instantiation
         $this->description = $description;
-    }
-
-    public function complete()
-    {
-        $this->completed = true;
     }
 
     public function isComplete()
@@ -27,8 +22,7 @@ class Task {
 
 $task = new Task('Go to the store');
 
-$task->complete();
-
 var_dump($task->isComplete());
 
-require 'view.index.php';
+
+//require 'view.index.php';
